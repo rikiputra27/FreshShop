@@ -1,0 +1,104 @@
+<!-- setup navbar for mobile -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-default py-0 pb-lg-4 " aria-label="Offcanvas navbar large">
+    <div class="container">
+        <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="navbar-default"
+            aria-labelledby="navbar-defaultLabel"
+        >
+            <div class="offcanvas-header pb-1">
+                <a href="./index.html">
+                    <img src="./assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template">
+                </a>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body">
+                <% if (logged.length > 1) { %>
+                    <center>
+                        <div class="my-2">
+                            You have logged in as <strong> <%= userData.username %></strong>
+                        </div> 
+                    </center>
+                <% } %>
+                <div class="d-block d-lg-none mb-4">
+                    <a
+                        class="btn btn-primary w-100 d-flex justify-content-center align-items-center"
+                        data-bs-toggle="collapse"
+                        href="#collapseExample"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        <span class="me-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-grid"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="16"
+                                    height="16"
+                                ></rect>
+                                <rect
+                                    x="14"
+                                    y="3"
+                                    width="16"
+                                    height="16"
+                                ></rect>
+                                <rect
+                                    x="14"
+                                    y="14"
+                                    width="7"
+                                    height="7"
+                                ></rect>
+                                <rect
+                                    x="3"
+                                    y="14"
+                                    width="7"
+                                    height="7"
+                                ></rect>
+                            </svg>
+                        </span>
+                        Lihat Menu
+                    </a>
+                    <div class="collapse mt-2" id="collapseExample">
+                        <div class="card card-body">
+                            <ul class="mb-0 list-unstyled">
+                                <li>
+                                    <a class="dropdown-item fs-5 pb-4" href="./pages/shop-grid.html">Coffee</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-5 pb-4" href="./pages/shop-grid.html">Non Coffee</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-5 pb-4" href="./pages/shop-grid.html">Snacks</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-5 pb-4" href="./pages/shop-grid.html">Dessert</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-5 pb-4" href="./pages/shop-grid.html">Other</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
